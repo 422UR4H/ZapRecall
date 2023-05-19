@@ -1,8 +1,6 @@
-import { useState } from "react";
 import styled from "styled-components";
 import noIcon from '../../images/icone_erro.png';
 import partialIcon from '../../images/icone_quase.png';
-import zapIcon from '../../images/icone_certo.png';
 import FinishText from "./FinishText";
 import partyIcon from '../../images/party.png';
 import sadIcon from '../../images/sad.png';
@@ -31,14 +29,14 @@ export default function Footer({ maxCount, done }) {
         <StyledFooter isFinished={isFinished} data-test='footer'>
             {isFinished && <FinishText msg={msg} />}
             <p>{done.length}/{maxCount} CONCLUÍDOS</p>
-            <div>{done.map((icon, i) => 
+            <div>{done.map((icon, i) =>
                 <img key={i}
                     src={icon}
                     data-test={icon === noIcon ? 'no-icon' : icon === partialIcon ? 'partial-icon' : 'zap-icon'}
                 />)}
             </div>
         </StyledFooter>
-    )
+    );
 }
 
 

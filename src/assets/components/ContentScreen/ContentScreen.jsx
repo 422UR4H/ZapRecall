@@ -14,7 +14,7 @@ export default function ContentScreen({ deck }) {
             <Deck deck={deck} done={done} setDone={setDone} />
             <Footer maxCount={deck.length} done={done} />
         </StyledScreen>
-    )
+    );
 }
 
 

@@ -15,7 +15,7 @@ function App() {
       {onStart ? <ContentScreen deck={deck} /> :
         <InitScreen setOnStart={setOnStart} />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

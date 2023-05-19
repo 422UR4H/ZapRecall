@@ -11,7 +11,7 @@ export default function FinishText({ msg }) {
             </div>
             <p>{msg.p}</p>
         </StyledFinishText>
-    )
+    );
 }
 
 

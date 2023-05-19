@@ -14,7 +14,7 @@ export default function InitScreen({ setOnStart }) {
                 </button>
             </div>
         </StyledInitScreen>
-    )
+    );
 }
 
 

@@ -23,7 +23,7 @@ export default function ThirdCard({ answer, markCard }) {
                 </StyledButton>
             </div>
         </StyledThirdCard>
-    )
+    );
 }
 
 
@@ -37,7 +37,7 @@ const StyledButton = styled.button`
     width: 85.17px;
     height: 37.17px;
     border-radius: 5px;
-`
+`;
 
 const StyledThirdCard = styled(StyledFleshcard)`
     background-color: #FFFFD4;

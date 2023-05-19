@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyledFleshcard } from './StyledFleshcard';
 import styled from 'styled-components';
+import { StyledFleshcard } from './StyledFleshcard';
 
 export default function FirstCard(props) {
     const { i, icon, color, isDone, setTemplate, dataTest } = props;
-    
+
     return (
         <StyledFirstCard color={color} isDone={isDone}>
             <h2 data-test='flashcard-text'>Pergunta {i}</h2>
@@ -12,7 +12,7 @@ export default function FirstCard(props) {
                 <img data-test={dataTest} src={icon} alt="botão play" />
             </button>
         </StyledFirstCard>
-    )
+    );
 }
 
 

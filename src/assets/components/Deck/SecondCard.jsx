@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledFleshcard } from './StyledFleshcard';
 import icon from '../../images/seta_virar.png';
+import { StyledFleshcard } from './StyledFleshcard';
 
 
 export default function SecondCard({ question, setTemplate }) {
@@ -12,7 +12,7 @@ export default function SecondCard({ question, setTemplate }) {
                 <img src={icon} alt="botão flip" />
             </button>
         </StyledSecondCard>
-    )
+    );
 }
 
 
