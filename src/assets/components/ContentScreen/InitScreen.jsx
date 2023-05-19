@@ -67,5 +67,9 @@ const StyledInitScreen = styled.div`
         border: 1px solid #D70900;
         border-radius: 5px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 `;
