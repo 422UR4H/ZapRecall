@@ -31,6 +31,7 @@ const StyledButton = styled.button`
 `
 
 const StyledThirdCard = styled(StyledFleshcard)`
+    background-color: #FFFFD4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

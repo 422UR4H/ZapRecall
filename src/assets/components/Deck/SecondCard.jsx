@@ -14,6 +14,7 @@ export default function SecondCard({ question, setTemplate }) {
 
 
 const StyledSecondCard = styled(StyledFleshcard)`
+    background-color: #FFFFD4;
     height: 130px;
     position: relative;
 
