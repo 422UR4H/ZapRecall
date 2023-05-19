@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function Footer({count}) {
     return (
-        <StyledFooter>
+        <StyledFooter data-test='footer'>
             <p>{count.done}/{count.max} CONCLUÍDOS</p>
         </StyledFooter>
     )

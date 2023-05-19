@@ -18,21 +18,25 @@ export default function Flashcard(props) {
     const [color, setColor] = useState('black');
     const [isDone, setIsDone] = useState(false);
     const [template, setTemplate] = useState('first');
+    const [dataTest, setDataTest] = useState('');
 
 
     function markCard(status) {
         switch (status) {
             case 'no':
                 setIcon(no);
-                setColor(colors.no)
+                setColor(colors.no);
+                setDataTest('no-icon');
                 break;
             case 'partial':
                 setIcon(partial);
                 setColor(colors.partial);
+                setDataTest('partial-icon');
                 break;
             case 'zap':
                 setIcon(zap);
                 setColor(colors.zap);
+                setDataTest('zap-icon');
                 break;
         }
         setIsDone(true);
@@ -42,10 +46,10 @@ export default function Flashcard(props) {
     }
 
     return (
-        <>
+        <div data-test='flashcard'>
             {template === 'second' ? <SecondCard question={card.question} setTemplate={setTemplate} /> :
                 template === 'third' ? <ThirdCard answer={card.answer} markCard={markCard} /> :
-                    <FirstCard i={i} icon={icon} color={color} isDone={isDone} setTemplate={setTemplate} />}
-        </>
+                    <FirstCard i={i} icon={icon} color={color} isDone={isDone} setTemplate={setTemplate} dataTest={dataTest} />}
+        </div>
     );
 }

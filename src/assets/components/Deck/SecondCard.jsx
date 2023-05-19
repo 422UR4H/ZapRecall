@@ -6,8 +6,8 @@ import icon from '../../images/seta_virar.png';
 export default function SecondCard({ question, setTemplate }) {
     return (
         <StyledSecondCard>
-            <p>{question}</p>
-            <button onClick={() => setTemplate('third')}><img src={icon} alt="botão flip" /></button>
+            <p data-test='flashcard-text'>{question}</p>
+            <button data-test='turn-btn' onClick={() => setTemplate('third')}><img src={icon} alt="botão flip" /></button>
         </StyledSecondCard>
     )
 }
