@@ -26,7 +26,7 @@ export default function Footer({ maxCount, done }) {
     }
 
     return (
-        <StyledFooter isFinished={isFinished} data-test='footer'>
+        <StyledFooter isfinished={isFinished} data-test='footer'>
             {isFinished && <FinishText msg={msg} />}
             <p>{done.length}/{maxCount} CONCLUÍDOS</p>
             <div>{done.map((icon, i) =>
@@ -43,7 +43,7 @@ export default function Footer({ maxCount, done }) {
 const StyledFooter = styled.footer`
     background-color: white;
     width: 100vw;
-    height: ${props => props.isFinished ? '170px' : '70px'};
+    height: ${props => props.isfinished ? '170px' : '70px'};
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 
     display: flex;
