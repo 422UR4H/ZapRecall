@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import logo from '../../images/logo.png';
 import styled from 'styled-components';
+
 
 export default function InitScreen({ setOnStart }) {
     return (
@@ -8,7 +9,9 @@ export default function InitScreen({ setOnStart }) {
             <div>
                 <img src={logo} alt="Logo ZapRecall" />
                 <h1>ZapRecall</h1>
-                <button data-test='start-btn' onClick={() => setOnStart(true)}>Iniciar Recall!</button>
+                <button data-test='start-btn' onClick={() => setOnStart(true)}>
+                    Iniciar Recall!
+                </button>
             </div>
         </StyledInitScreen>
     )

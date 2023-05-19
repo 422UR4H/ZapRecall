@@ -4,15 +4,15 @@ import Deck from '../Deck/Deck';
 import Footer from '../Footer/Footer';
 import styled from 'styled-components';
 
-export default function ContentScreen(props) {
-    const {deck} = props;
-    const [count, setCount] = useState({done: 0, max: deck.length});
+
+export default function ContentScreen({ deck }) {
+    const [done, setDone] = useState([]);
 
     return (
         <StyledScreen>
             <Top />
-            <Deck deck={deck} count={count} setCount={setCount} />
-            <Footer count={count}/>
+            <Deck deck={deck} done={done} setDone={setDone} />
+            <Footer maxCount={deck.length} done={done} />
         </StyledScreen>
     )
 }

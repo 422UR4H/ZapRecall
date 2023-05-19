@@ -12,10 +12,11 @@ export default function Top() {
 
 
 const StyledTop = styled.header`
-    display: flex;
-    align-items: center;
     margin-top: 42px;
     margin-bottom: 51px;
+    
+    display: flex;
+    align-items: center;
 
     img {
         width: 52px;

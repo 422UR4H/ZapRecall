@@ -3,11 +3,14 @@ import styled from 'styled-components';
 import { StyledFleshcard } from './StyledFleshcard';
 import icon from '../../images/seta_virar.png';
 
+
 export default function SecondCard({ question, setTemplate }) {
     return (
         <StyledSecondCard>
             <p data-test='flashcard-text'>{question}</p>
-            <button data-test='turn-btn' onClick={() => setTemplate('third')}><img src={icon} alt="botão flip" /></button>
+            <button data-test='turn-btn' onClick={() => setTemplate('third')}>
+                <img src={icon} alt="botão flip" />
+            </button>
         </StyledSecondCard>
     )
 }

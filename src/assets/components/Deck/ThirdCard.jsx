@@ -1,6 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { StyledFleshcard } from './StyledFleshcard'
+import React from 'react';
+import styled from 'styled-components';
+import { StyledFleshcard } from './StyledFleshcard';
+
 
 export default function ThirdCard({ answer, markCard }) {
 
@@ -9,9 +10,17 @@ export default function ThirdCard({ answer, markCard }) {
         <StyledThirdCard>
             <p data-test='flashcard-text'>{answer}</p>
             <div>
-                <StyledButton color={'#FF3030'} data-test='no-btn' onClick={() => markCard('no')} >Não lembrei</StyledButton>
-                <StyledButton color={'#FF922E'} data-test='partial-btn' onClick={() => markCard('partial')}>Quase não lembrei</StyledButton>
-                <StyledButton color={'#2FBE34'} data-test='zap-btn' onClick={() => markCard('zap')}>Zap!</StyledButton>
+                <StyledButton color={'#FF3030'} data-test='no-btn' onClick={() => markCard('no')} >
+                    Não lembrei
+                </StyledButton>
+
+                <StyledButton color={'#FF922E'} data-test='partial-btn' onClick={() => markCard('partial')}>
+                    Quase não lembrei
+                </StyledButton>
+
+                <StyledButton color={'#2FBE34'} data-test='zap-btn' onClick={() => markCard('zap')}>
+                    Zap!
+                </StyledButton>
             </div>
         </StyledThirdCard>
     )

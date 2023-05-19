@@ -1,6 +1,6 @@
 import Flashcard from './Flashcard';
 
-export default function Deck({ deck, count, setCount }) {
+export default function Deck({ deck, done, setDone }) {
     let i = 1;
     return (
         <>
@@ -8,8 +8,8 @@ export default function Deck({ deck, count, setCount }) {
                 <Flashcard key={key}
                     card={card}
                     i={i++}
-                    count={count}
-                    setCount={setCount}
+                    done={done}
+                    setDone={setDone}
                 />
             )}
         </>
