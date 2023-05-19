@@ -20,8 +20,10 @@ export default function ContentScreen({ deck }) {
 
 const StyledScreen = styled.div`
     background-color: #FB6B6B;
+    width: 100vw;
+    margin-bottom: 80px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
 `;
