@@ -1,8 +1,8 @@
-import { GlobalStyle } from './assets/components/GlobalStyle';
-import { Reset } from './assets/components/Reset';
+import { GlobalStyle } from './assets/components/Styles/GlobalStyle';
+import { Reset } from './assets/components/Styles/Reset';
 import { useState } from 'react';
-import ContentScreen from './assets/components/ContentScreen/ContentScreen';
-import InitScreen from './assets/components/ContentScreen/InitScreen';
+import ContentScreen from './assets/components/Pages/ContentScreen';
+import InitScreen from './assets/components/Pages/InitScreen';
 import deck from './scripts/deck';
 
 function App() {

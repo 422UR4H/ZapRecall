@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import icon from '../../images/seta_virar.png';
-import { StyledFleshcard } from './StyledFleshcard';
+import { StyledFleshcard } from '../Styles/StyledFleshcard';
 
 
 export default function SecondCard({ question, setTemplate }) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledFleshcard } from './StyledFleshcard';
+import { StyledFleshcard } from '../Styles/StyledFleshcard';
 
 
 export default function ThirdCard({ answer, markCard }) {

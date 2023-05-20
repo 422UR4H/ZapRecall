@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledFleshcard } from './StyledFleshcard';
+import { StyledFleshcard } from '../Styles/StyledFleshcard';
 
 export default function FirstCard(props) {
     const { i, icon, color, isDone, setTemplate, dataTest } = props;

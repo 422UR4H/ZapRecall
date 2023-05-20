@@ -1,4 +1,4 @@
-import Flashcard from './Flashcard';
+import Flashcard from '../Cards/Flashcard';
 
 export default function Deck({ deck, done, setDone }) {
     let i = 1;
