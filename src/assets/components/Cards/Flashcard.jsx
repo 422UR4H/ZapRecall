@@ -48,19 +48,15 @@ export default function Flashcard(props) {
 
     return (
         <div data-test='flashcard'>
-            {template === 'second' ? (
-                <SecondCard question={card.question} setTemplate={setTemplate} />
-            ) : template === 'third' ? (
-                <ThirdCard answer={card.answer} markCard={markCard} />
-            ) : (
-                <FirstCard i={i}
-                    icon={icon}
-                    color={color}
-                    isDone={isDone}
-                    setTemplate={setTemplate}
-                    dataTest={dataTest}
-                />
-            )}
+            {template === 'first' && <FirstCard i={i}
+                icon={icon}
+                color={color}
+                isDone={isDone}
+                setTemplate={setTemplate}
+                dataTest={dataTest}
+            />}
+            {template === 'second' && <SecondCard question={card.question} setTemplate={setTemplate} />}
+            {template === 'third' && <ThirdCard answer={card.answer} markCard={markCard} />}
         </div>
     );
 }
